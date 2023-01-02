@@ -1,8 +1,10 @@
 import {Employe} from './employe.entities'
 export interface Projet {
   idprojet: number;
-  nomprojet: string;
+  nomproj: string;
   datedebut: string;
   datefin: string;
+
+  cout: number;
   idresponsable: Employe;
 }

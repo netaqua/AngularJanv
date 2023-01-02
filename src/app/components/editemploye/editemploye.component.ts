@@ -22,16 +22,15 @@ export class EditemployeComponent implements OnInit {
         matricule: [employe.matricule, Validators.required],
         nom: [employe.nom, Validators.required],
         prenom: [employe.prenom, Validators.required],
-        tel: [employe.tel, [Validators.required],
-        mail: [employe.mail, [Validators.required],
+        tel: [employe.tel, Validators.required],
+        mail: [employe.mail, Validators.required]
       })
       });
   }
   onUpdateEmploye(): void {
     this.submitted = true;
     if (this.employeFormGroup?.invalid) { return; }
-    this.employeService.updateEmploye(this.employeFormGroup?.value).subscribe(data
-        => {alert('maj ok')},
+    this.employeService.updateEmploye(this.employeFormGroup?.value).subscribe(data => {alert('maj ok')},
       err => {
         alert(err.headers.get("error"));
       });

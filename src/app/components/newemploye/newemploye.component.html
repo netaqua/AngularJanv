@@ -3,11 +3,6 @@
   <form [formGroup]="employeFormGroup" *ngIf="employeFormGroup">
 
     <div class = "form-group">
-      <label>Idemploye</label>
-      <input type ="text" class="form-control" value="{{idemploye}}" readonly="readonly">
-    </div>
-
-    <div class = "form-group">
       <label>Matricule</label>
       <input type ="text" class="form-control" formControlName="matricule"
              [ngClass]="{'is-invalid': submitted &&  employeFormGroup.controls.matricule.errors}">

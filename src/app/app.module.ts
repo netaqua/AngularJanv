@@ -11,6 +11,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { NewemployeComponent } from './components/newemploye/newemploye.component';
 import { EditemployeComponent } from './components/editemploye/editemploye.component';
+import { NewprojetComponent } from './components/newprojet/newprojet.component';
+import { EditprojetComponent } from './components/editprojet/editprojet.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { EditemployeComponent } from './components/editemploye/editemploye.compo
     EmployesComponent,
     ProjetsComponent,
     NewemployeComponent,
-    EditemployeComponent
+    EditemployeComponent,
+    NewprojetComponent,
+    EditprojetComponent
   ],
   imports: [
     BrowserModule,

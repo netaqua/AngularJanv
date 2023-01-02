@@ -1,0 +1,37 @@
+<div class="container">
+  <form [formGroup]="projetFormGroup" *ngIf="projetFormGroup">
+    <table class="table">
+      <thead>
+      <th>Nom du projet</th>
+      <th>Date de debut</th>
+      <th>Date de fin</th>
+      <th>Cout</th>
+      <th>id du responsable</th>
+      </thead>
+      <tbody>
+      <td>
+        <input type ="text" class="form-control"
+               formControlName="nomproj">
+      </td>
+      <td>
+        <input type ="date" class="form-control"
+                  formControlName="datedebut">
+      </td>
+      <td>
+        <input type ="date" class="form-control"
+                  formControlName="datefin">
+      </td>
+
+      <td> <input type ="text" class="form-control"  formControlName="cout"></td>
+      <td>
+        <input type ="number" class="form-control" min="1"
+               formControlName="idresponsable">
+      </td>
+      </tbody>
+    </table>
+    <button (click)="onSaveProjet()" class="btn btn-success">
+      Save
+    </button>
+  </form>
+</div>
+

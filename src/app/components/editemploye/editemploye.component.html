@@ -2,7 +2,7 @@
   <form [formGroup]="employeFormGroup" *ngIf="employeFormGroup">
     <div class = "form-group">
       <label>IDEMPLOYE</label>
-      <input type ="text" class="form-control" formControlName="idemploye" readonly>
+      <input type ="text" class="form-control" value="{{idEmploye}}" formControlName="idemploye" readonly>
     </div>
     <div class = "form-group">
       <label>Matricule</label>
