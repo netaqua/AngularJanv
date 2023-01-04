@@ -11,6 +11,8 @@ import {Employe} from "../../entities/employe.entities";
 export class ProjetsComponent  implements OnInit{
   projet: Projet|null=null;
 
+  projets?: Projet[];
+
   idprojet :number=0;
   constructor(private projetService: ProjetService, private router: Router) {
   }
@@ -25,7 +27,7 @@ export class ProjetsComponent  implements OnInit{
     this.router.navigateByUrl('newProjet');
   }
   onProjetALL() {
-    this.router.navigateByUrl('Projets');
+    this.router.navigateByUrl('allProjet');
   }
   onDelete(p: Projet) {
     let v = confirm('êtes vous sûr de vouloir supprimer ? ');

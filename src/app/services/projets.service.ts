@@ -13,10 +13,13 @@ export class ProjetService{
   getProjet(idprojet: number): Observable<Projet>{
     return this.http.get<Projet>(this.host + '/projets/' + idprojet);
   }
+  searchProjet(): Observable<Projet[]>{
+    return this.http.get<Projet[]>(this.host + '/projets/all');
+  }
   deleteProjet(p: Projet): Observable<void>{
     return this.http.delete<void>(this.host + '/projets/' + p.idprojet);
   }
-  save(p: Projet,emp:Employe): Observable<Projet>{
+  save(p: Projet,emp: Employe): Observable<Projet>{
     p.idresponsable = emp;
     return this.http.post<Projet>(this.host + '/projets/',p);
   }

@@ -40,6 +40,7 @@ export class EditprojetComponent implements OnInit{
       })
     }
   }
+  /*
   onDeleteProjet() {
     let v = confirm('êtes vous sûr de vouloir supprimer ? ');
     if (v) {
@@ -50,5 +51,5 @@ export class EditprojetComponent implements OnInit{
         err => {alert(err.headers.get("error"));
         });
     }
-  }
+  }*/
 }

@@ -7,6 +7,7 @@ import {NewemployeComponent} from "./components/newemploye/newemploye.component"
 import {EditemployeComponent} from "./components/editemploye/editemploye.component";
 import {NewprojetComponent} from "./components/newprojet/newprojet.component";
 import {EditprojetComponent} from "./components/editprojet/editprojet.component";
+import {AllprojetComponent} from "./components/allprojet/allprojet.component";
 
 const routes: Routes = [
   {path: 'employes', component: EmployesComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: "newEmploye", component: NewemployeComponent},
   {path: "editEmploye/:idemploye", component:EditemployeComponent},
   {path: "newProjet", component: NewprojetComponent},
-  {path: "editProjet", component: EditprojetComponent}
+  {path: "editProjet/:idprojet", component: EditprojetComponent},
+  {path: "allProjet", component: AllprojetComponent},
 ];
 
 @NgModule({

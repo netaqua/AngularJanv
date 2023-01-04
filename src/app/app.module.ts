@@ -13,6 +13,7 @@ import { NewemployeComponent } from './components/newemploye/newemploye.componen
 import { EditemployeComponent } from './components/editemploye/editemploye.component';
 import { NewprojetComponent } from './components/newprojet/newprojet.component';
 import { EditprojetComponent } from './components/editprojet/editprojet.component';
+import { AllprojetComponent } from './components/allprojet/allprojet.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EditprojetComponent } from './components/editprojet/editprojet.componen
     NewemployeComponent,
     EditemployeComponent,
     NewprojetComponent,
-    EditprojetComponent
+    EditprojetComponent,
+    AllprojetComponent
   ],
   imports: [
     BrowserModule,
