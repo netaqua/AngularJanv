@@ -13,6 +13,12 @@ export class ProjetService{
   getProjet(idprojet: number): Observable<Projet>{
     return this.http.get<Projet>(this.host + '/projets/' + idprojet);
   }
+  searchProjetCout(cout: number): Observable<Projet[]>{
+    return this.http.get<Projet[]>(this.host + '/projets/cout=' + cout);
+  }
+  searchProjets(nomproj: string): Observable<Projet[]>{
+    return this.http.get<Projet[]>(this.host + '/projets/nomproj='+ nomproj);
+  }
   searchProjet(): Observable<Projet[]>{
     return this.http.get<Projet[]>(this.host + '/projets/all');
   }

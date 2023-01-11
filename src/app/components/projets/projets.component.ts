@@ -23,6 +23,12 @@ export class ProjetsComponent  implements OnInit{
       data => {this.projet=data},
         err=>{alert("projet introuvable")});
   }
+
+  onSearchCout(value : any) {
+    this.projetService.searchProjetCout(value.cout).subscribe(
+      data => {this.projets=data},
+      err=>{alert("projet introuvable")});
+  }
   onNewProjet() {
     this.router.navigateByUrl('newProjet');
   }

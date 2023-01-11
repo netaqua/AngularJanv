@@ -14,6 +14,7 @@ import { EditemployeComponent } from './components/editemploye/editemploye.compo
 import { NewprojetComponent } from './components/newprojet/newprojet.component';
 import { EditprojetComponent } from './components/editprojet/editprojet.component';
 import { AllprojetComponent } from './components/allprojet/allprojet.component';
+import { ExamenComponent } from './components/examen/examen.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AllprojetComponent } from './components/allprojet/allprojet.component';
     EditemployeComponent,
     NewprojetComponent,
     EditprojetComponent,
-    AllprojetComponent
+    AllprojetComponent,
+    ExamenComponent
   ],
   imports: [
     BrowserModule,

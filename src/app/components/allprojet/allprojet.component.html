@@ -1,3 +1,9 @@
+<form #f="ngForm" (click)="onSearch()" class="form-inline">
+  <button class="btn btn-sm btn-outline-info m-lg-2">
+<span class = "fa fa-search">
+</span>
+  </button>
+</form>
 <ng-container *ngIf="projets">
   <ng-container *ngIf="projets!= null else inconnu">
     <table class="table">
